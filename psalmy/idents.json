@@ -1,0 +1,937 @@
+[
+  {
+    "ident": "ab",
+    "kind": "element",
+    "href": "ref-ab.html"
+  },
+  {
+    "ident": "abbr",
+    "kind": "element",
+    "href": "ref-abbr.html"
+  },
+  {
+    "ident": "abstract",
+    "kind": "element",
+    "href": "ref-abstract.html"
+  },
+  {
+    "ident": "add",
+    "kind": "element",
+    "href": "ref-add.html"
+  },
+  {
+    "ident": "anchor",
+    "kind": "element",
+    "href": "ref-anchor.html"
+  },
+  {
+    "ident": "app",
+    "kind": "element",
+    "href": "ref-app.html"
+  },
+  {
+    "ident": "argument",
+    "kind": "element",
+    "href": "ref-argument.html"
+  },
+  {
+    "ident": "att.anchoring",
+    "kind": "class",
+    "href": "ref-att.anchoring.html"
+  },
+  {
+    "ident": "att.breaking",
+    "kind": "class",
+    "href": "ref-att.breaking.html"
+  },
+  {
+    "ident": "att.calendarSystem",
+    "kind": "class",
+    "href": "ref-att.calendarSystem.html"
+  },
+  {
+    "ident": "att.canonical",
+    "kind": "class",
+    "href": "ref-att.canonical.html"
+  },
+  {
+    "ident": "att.cmc",
+    "kind": "class",
+    "href": "ref-att.cmc.html"
+  },
+  {
+    "ident": "att.cReferencing",
+    "kind": "class",
+    "href": "ref-att.cReferencing.html"
+  },
+  {
+    "ident": "att.datable",
+    "kind": "class",
+    "href": "ref-att.datable.html"
+  },
+  {
+    "ident": "att.datable.custom",
+    "kind": "class",
+    "href": "ref-att.datable.custom.html"
+  },
+  {
+    "ident": "att.datable.iso",
+    "kind": "class",
+    "href": "ref-att.datable.iso.html"
+  },
+  {
+    "ident": "att.datable.w3c",
+    "kind": "class",
+    "href": "ref-att.datable.w3c.html"
+  },
+  {
+    "ident": "att.datcat",
+    "kind": "class",
+    "href": "ref-att.datcat.html"
+  },
+  {
+    "ident": "att.declarable",
+    "kind": "class",
+    "href": "ref-att.declarable.html"
+  },
+  {
+    "ident": "att.declaring",
+    "kind": "class",
+    "href": "ref-att.declaring.html"
+  },
+  {
+    "ident": "att.dimensions",
+    "kind": "class",
+    "href": "ref-att.dimensions.html"
+  },
+  {
+    "ident": "att.divLike",
+    "kind": "class",
+    "href": "ref-att.divLike.html"
+  },
+  {
+    "ident": "att.docStatus",
+    "kind": "class",
+    "href": "ref-att.docStatus.html"
+  },
+  {
+    "ident": "att.duration",
+    "kind": "class",
+    "href": "ref-att.duration.html"
+  },
+  {
+    "ident": "att.duration.iso",
+    "kind": "class",
+    "href": "ref-att.duration.iso.html"
+  },
+  {
+    "ident": "att.duration.w3c",
+    "kind": "class",
+    "href": "ref-att.duration.w3c.html"
+  },
+  {
+    "ident": "att.edition",
+    "kind": "class",
+    "href": "ref-att.edition.html"
+  },
+  {
+    "ident": "att.editLike",
+    "kind": "class",
+    "href": "ref-att.editLike.html"
+  },
+  {
+    "ident": "att.fragmentable",
+    "kind": "class",
+    "href": "ref-att.fragmentable.html"
+  },
+  {
+    "ident": "att.global",
+    "kind": "class",
+    "href": "ref-att.global.html"
+  },
+  {
+    "ident": "att.global.analytic",
+    "kind": "class",
+    "href": "ref-att.global.analytic.html"
+  },
+  {
+    "ident": "att.global.change",
+    "kind": "class",
+    "href": "ref-att.global.change.html"
+  },
+  {
+    "ident": "att.global.facs",
+    "kind": "class",
+    "href": "ref-att.global.facs.html"
+  },
+  {
+    "ident": "att.global.linking",
+    "kind": "class",
+    "href": "ref-att.global.linking.html"
+  },
+  {
+    "ident": "att.global.rendition",
+    "kind": "class",
+    "href": "ref-att.global.rendition.html"
+  },
+  {
+    "ident": "att.global.responsibility",
+    "kind": "class",
+    "href": "ref-att.global.responsibility.html"
+  },
+  {
+    "ident": "att.global.source",
+    "kind": "class",
+    "href": "ref-att.global.source.html"
+  },
+  {
+    "ident": "att.internetMedia",
+    "kind": "class",
+    "href": "ref-att.internetMedia.html"
+  },
+  {
+    "ident": "att.lexicographic.normalized",
+    "kind": "class",
+    "href": "ref-att.lexicographic.normalized.html"
+  },
+  {
+    "ident": "att.linguistic",
+    "kind": "class",
+    "href": "ref-att.linguistic.html"
+  },
+  {
+    "ident": "att.metrical",
+    "kind": "class",
+    "href": "ref-att.metrical.html"
+  },
+  {
+    "ident": "att.naming",
+    "kind": "class",
+    "href": "ref-att.naming.html"
+  },
+  {
+    "ident": "att.notated",
+    "kind": "class",
+    "href": "ref-att.notated.html"
+  },
+  {
+    "ident": "att.placement",
+    "kind": "class",
+    "href": "ref-att.placement.html"
+  },
+  {
+    "ident": "att.pointing",
+    "kind": "class",
+    "href": "ref-att.pointing.html"
+  },
+  {
+    "ident": "att.ranging",
+    "kind": "class",
+    "href": "ref-att.ranging.html"
+  },
+  {
+    "ident": "att.scope",
+    "kind": "class",
+    "href": "ref-att.scope.html"
+  },
+  {
+    "ident": "att.segLike",
+    "kind": "class",
+    "href": "ref-att.segLike.html"
+  },
+  {
+    "ident": "att.sortable",
+    "kind": "class",
+    "href": "ref-att.sortable.html"
+  },
+  {
+    "ident": "att.spanning",
+    "kind": "class",
+    "href": "ref-att.spanning.html"
+  },
+  {
+    "ident": "att.textCritical",
+    "kind": "class",
+    "href": "ref-att.textCritical.html"
+  },
+  {
+    "ident": "att.timed",
+    "kind": "class",
+    "href": "ref-att.timed.html"
+  },
+  {
+    "ident": "att.transcriptional",
+    "kind": "class",
+    "href": "ref-att.transcriptional.html"
+  },
+  {
+    "ident": "att.typed",
+    "kind": "class",
+    "href": "ref-att.typed.html"
+  },
+  {
+    "ident": "att.witnessed",
+    "kind": "class",
+    "href": "ref-att.witnessed.html"
+  },
+  {
+    "ident": "att.written",
+    "kind": "class",
+    "href": "ref-att.written.html"
+  },
+  {
+    "ident": "author",
+    "kind": "element",
+    "href": "ref-author.html"
+  },
+  {
+    "ident": "bibl",
+    "kind": "element",
+    "href": "ref-bibl.html"
+  },
+  {
+    "ident": "body",
+    "kind": "element",
+    "href": "ref-body.html"
+  },
+  {
+    "ident": "catRef",
+    "kind": "element",
+    "href": "ref-catRef.html"
+  },
+  {
+    "ident": "cb",
+    "kind": "element",
+    "href": "ref-cb.html"
+  },
+  {
+    "ident": "choice",
+    "kind": "element",
+    "href": "ref-choice.html"
+  },
+  {
+    "ident": "corr",
+    "kind": "element",
+    "href": "ref-corr.html"
+  },
+  {
+    "ident": "correspContext",
+    "kind": "element",
+    "href": "ref-correspContext.html"
+  },
+  {
+    "ident": "correspDesc",
+    "kind": "element",
+    "href": "ref-correspDesc.html"
+  },
+  {
+    "ident": "date",
+    "kind": "element",
+    "href": "ref-date.html"
+  },
+  {
+    "ident": "del",
+    "kind": "element",
+    "href": "ref-del.html"
+  },
+  {
+    "ident": "div",
+    "kind": "element",
+    "href": "ref-div.html"
+  },
+  {
+    "ident": "epigraph",
+    "kind": "element",
+    "href": "ref-epigraph.html"
+  },
+  {
+    "ident": "fileDesc",
+    "kind": "element",
+    "href": "ref-fileDesc.html"
+  },
+  {
+    "ident": "gap",
+    "kind": "element",
+    "href": "ref-gap.html"
+  },
+  {
+    "ident": "head",
+    "kind": "element",
+    "href": "ref-head.html"
+  },
+  {
+    "ident": "hi",
+    "kind": "element",
+    "href": "ref-hi.html"
+  },
+  {
+    "ident": "idno",
+    "kind": "element",
+    "href": "ref-idno.html"
+  },
+  {
+    "ident": "language",
+    "kind": "element",
+    "href": "ref-language.html"
+  },
+  {
+    "ident": "langUsage",
+    "kind": "element",
+    "href": "ref-langUsage.html"
+  },
+  {
+    "ident": "lb",
+    "kind": "element",
+    "href": "ref-lb.html"
+  },
+  {
+    "ident": "lem",
+    "kind": "element",
+    "href": "ref-lem.html"
+  },
+  {
+    "ident": "listAnnotation",
+    "kind": "element",
+    "href": "ref-listAnnotation.html"
+  },
+  {
+    "ident": "m",
+    "kind": "element",
+    "href": "ref-m.html"
+  },
+  {
+    "ident": "macro.abContent",
+    "kind": "macro",
+    "href": "ref-macro.abContent.html"
+  },
+  {
+    "ident": "macro.limitedContent",
+    "kind": "macro",
+    "href": "ref-macro.limitedContent.html"
+  },
+  {
+    "ident": "macro.paraContent",
+    "kind": "macro",
+    "href": "ref-macro.paraContent.html"
+  },
+  {
+    "ident": "macro.phraseSeq",
+    "kind": "macro",
+    "href": "ref-macro.phraseSeq.html"
+  },
+  {
+    "ident": "macro.phraseSeq.limited",
+    "kind": "macro",
+    "href": "ref-macro.phraseSeq.limited.html"
+  },
+  {
+    "ident": "macro.specialPara",
+    "kind": "macro",
+    "href": "ref-macro.specialPara.html"
+  },
+  {
+    "ident": "macro.xtext",
+    "kind": "macro",
+    "href": "ref-macro.xtext.html"
+  },
+  {
+    "ident": "model.annotationLike",
+    "kind": "class",
+    "href": "ref-model.annotationLike.html"
+  },
+  {
+    "ident": "model.biblLike",
+    "kind": "class",
+    "href": "ref-model.biblLike.html"
+  },
+  {
+    "ident": "model.biblPart",
+    "kind": "class",
+    "href": "ref-model.biblPart.html"
+  },
+  {
+    "ident": "model.choicePart",
+    "kind": "class",
+    "href": "ref-model.choicePart.html"
+  },
+  {
+    "ident": "model.common",
+    "kind": "class",
+    "href": "ref-model.common.html"
+  },
+  {
+    "ident": "model.correspContextPart",
+    "kind": "class",
+    "href": "ref-model.correspContextPart.html"
+  },
+  {
+    "ident": "model.correspDescPart",
+    "kind": "class",
+    "href": "ref-model.correspDescPart.html"
+  },
+  {
+    "ident": "model.dateLike",
+    "kind": "class",
+    "href": "ref-model.dateLike.html"
+  },
+  {
+    "ident": "model.divPart",
+    "kind": "class",
+    "href": "ref-model.divPart.html"
+  },
+  {
+    "ident": "model.emphLike",
+    "kind": "class",
+    "href": "ref-model.emphLike.html"
+  },
+  {
+    "ident": "model.global",
+    "kind": "class",
+    "href": "ref-model.global.html"
+  },
+  {
+    "ident": "model.global.edit",
+    "kind": "class",
+    "href": "ref-model.global.edit.html"
+  },
+  {
+    "ident": "model.headLike",
+    "kind": "class",
+    "href": "ref-model.headLike.html"
+  },
+  {
+    "ident": "model.highlighted",
+    "kind": "class",
+    "href": "ref-model.highlighted.html"
+  },
+  {
+    "ident": "model.hiLike",
+    "kind": "class",
+    "href": "ref-model.hiLike.html"
+  },
+  {
+    "ident": "model.imprintPart",
+    "kind": "class",
+    "href": "ref-model.imprintPart.html"
+  },
+  {
+    "ident": "model.inter",
+    "kind": "class",
+    "href": "ref-model.inter.html"
+  },
+  {
+    "ident": "model.limitedPhrase",
+    "kind": "class",
+    "href": "ref-model.limitedPhrase.html"
+  },
+  {
+    "ident": "model.milestoneLike",
+    "kind": "class",
+    "href": "ref-model.milestoneLike.html"
+  },
+  {
+    "ident": "model.nameLike",
+    "kind": "class",
+    "href": "ref-model.nameLike.html"
+  },
+  {
+    "ident": "model.noteLike",
+    "kind": "class",
+    "href": "ref-model.noteLike.html"
+  },
+  {
+    "ident": "model.paraPart",
+    "kind": "class",
+    "href": "ref-model.paraPart.html"
+  },
+  {
+    "ident": "model.phrase",
+    "kind": "class",
+    "href": "ref-model.phrase.html"
+  },
+  {
+    "ident": "model.pLike",
+    "kind": "class",
+    "href": "ref-model.pLike.html"
+  },
+  {
+    "ident": "model.pPart.data",
+    "kind": "class",
+    "href": "ref-model.pPart.data.html"
+  },
+  {
+    "ident": "model.pPart.edit",
+    "kind": "class",
+    "href": "ref-model.pPart.edit.html"
+  },
+  {
+    "ident": "model.pPart.editorial",
+    "kind": "class",
+    "href": "ref-model.pPart.editorial.html"
+  },
+  {
+    "ident": "model.pPart.transcriptional",
+    "kind": "class",
+    "href": "ref-model.pPart.transcriptional.html"
+  },
+  {
+    "ident": "model.profileDescPart",
+    "kind": "class",
+    "href": "ref-model.profileDescPart.html"
+  },
+  {
+    "ident": "model.ptrLike",
+    "kind": "class",
+    "href": "ref-model.ptrLike.html"
+  },
+  {
+    "ident": "model.publicationStmtPart.agency",
+    "kind": "class",
+    "href": "ref-model.publicationStmtPart.agency.html"
+  },
+  {
+    "ident": "model.publicationStmtPart.detail",
+    "kind": "class",
+    "href": "ref-model.publicationStmtPart.detail.html"
+  },
+  {
+    "ident": "model.rdgLike",
+    "kind": "class",
+    "href": "ref-model.rdgLike.html"
+  },
+  {
+    "ident": "model.resource",
+    "kind": "class",
+    "href": "ref-model.resource.html"
+  },
+  {
+    "ident": "model.respLike",
+    "kind": "class",
+    "href": "ref-model.respLike.html"
+  },
+  {
+    "ident": "model.segLike",
+    "kind": "class",
+    "href": "ref-model.segLike.html"
+  },
+  {
+    "ident": "model.standOffPart",
+    "kind": "class",
+    "href": "ref-model.standOffPart.html"
+  },
+  {
+    "ident": "model.teiHeaderPart",
+    "kind": "class",
+    "href": "ref-model.teiHeaderPart.html"
+  },
+  {
+    "ident": "note",
+    "kind": "element",
+    "href": "ref-note.html"
+  },
+  {
+    "ident": "orig",
+    "kind": "element",
+    "href": "ref-orig.html"
+  },
+  {
+    "ident": "p",
+    "kind": "element",
+    "href": "ref-p.html"
+  },
+  {
+    "ident": "pb",
+    "kind": "element",
+    "href": "ref-pb.html"
+  },
+  {
+    "ident": "pc",
+    "kind": "element",
+    "href": "ref-pc.html"
+  },
+  {
+    "ident": "profileDesc",
+    "kind": "element",
+    "href": "ref-profileDesc.html"
+  },
+  {
+    "ident": "publicationStmt",
+    "kind": "element",
+    "href": "ref-publicationStmt.html"
+  },
+  {
+    "ident": "publisher",
+    "kind": "element",
+    "href": "ref-publisher.html"
+  },
+  {
+    "ident": "pubPlace",
+    "kind": "element",
+    "href": "ref-pubPlace.html"
+  },
+  {
+    "ident": "rdg",
+    "kind": "element",
+    "href": "ref-rdg.html"
+  },
+  {
+    "ident": "ref",
+    "kind": "element",
+    "href": "ref-ref.html"
+  },
+  {
+    "ident": "reg",
+    "kind": "element",
+    "href": "ref-reg.html"
+  },
+  {
+    "ident": "resp",
+    "kind": "element",
+    "href": "ref-resp.html"
+  },
+  {
+    "ident": "respStmt",
+    "kind": "element",
+    "href": "ref-respStmt.html"
+  },
+  {
+    "ident": "seg",
+    "kind": "element",
+    "href": "ref-seg.html"
+  },
+  {
+    "ident": "sourceDesc",
+    "kind": "element",
+    "href": "ref-sourceDesc.html"
+  },
+  {
+    "ident": "sponsor",
+    "kind": "element",
+    "href": "ref-sponsor.html"
+  },
+  {
+    "ident": "standOff",
+    "kind": "element",
+    "href": "ref-standOff.html"
+  },
+  {
+    "ident": "supplied",
+    "kind": "element",
+    "href": "ref-supplied.html"
+  },
+  {
+    "ident": "TEI",
+    "kind": "element",
+    "href": "ref-TEI.html"
+  },
+  {
+    "ident": "teidata.authority",
+    "kind": "datatype",
+    "href": "ref-teidata.authority.html"
+  },
+  {
+    "ident": "teidata.certainty",
+    "kind": "datatype",
+    "href": "ref-teidata.certainty.html"
+  },
+  {
+    "ident": "teidata.count",
+    "kind": "datatype",
+    "href": "ref-teidata.count.html"
+  },
+  {
+    "ident": "teidata.duration.iso",
+    "kind": "datatype",
+    "href": "ref-teidata.duration.iso.html"
+  },
+  {
+    "ident": "teidata.duration.w3c",
+    "kind": "datatype",
+    "href": "ref-teidata.duration.w3c.html"
+  },
+  {
+    "ident": "teidata.enumerated",
+    "kind": "datatype",
+    "href": "ref-teidata.enumerated.html"
+  },
+  {
+    "ident": "teidata.gender",
+    "kind": "datatype",
+    "href": "ref-teidata.gender.html"
+  },
+  {
+    "ident": "teidata.interval",
+    "kind": "datatype",
+    "href": "ref-teidata.interval.html"
+  },
+  {
+    "ident": "teidata.language",
+    "kind": "datatype",
+    "href": "ref-teidata.language.html"
+  },
+  {
+    "ident": "teidata.name",
+    "kind": "datatype",
+    "href": "ref-teidata.name.html"
+  },
+  {
+    "ident": "teidata.namespace",
+    "kind": "datatype",
+    "href": "ref-teidata.namespace.html"
+  },
+  {
+    "ident": "teidata.namespaceOrName",
+    "kind": "datatype",
+    "href": "ref-teidata.namespaceOrName.html"
+  },
+  {
+    "ident": "teidata.nullOrName",
+    "kind": "datatype",
+    "href": "ref-teidata.nullOrName.html"
+  },
+  {
+    "ident": "teidata.numeric",
+    "kind": "datatype",
+    "href": "ref-teidata.numeric.html"
+  },
+  {
+    "ident": "teidata.outputMeasurement",
+    "kind": "datatype",
+    "href": "ref-teidata.outputMeasurement.html"
+  },
+  {
+    "ident": "teidata.pattern",
+    "kind": "datatype",
+    "href": "ref-teidata.pattern.html"
+  },
+  {
+    "ident": "teidata.point",
+    "kind": "datatype",
+    "href": "ref-teidata.point.html"
+  },
+  {
+    "ident": "teidata.pointer",
+    "kind": "datatype",
+    "href": "ref-teidata.pointer.html"
+  },
+  {
+    "ident": "teidata.prefix",
+    "kind": "datatype",
+    "href": "ref-teidata.prefix.html"
+  },
+  {
+    "ident": "teidata.probability",
+    "kind": "datatype",
+    "href": "ref-teidata.probability.html"
+  },
+  {
+    "ident": "teidata.probCert",
+    "kind": "datatype",
+    "href": "ref-teidata.probCert.html"
+  },
+  {
+    "ident": "teidata.replacement",
+    "kind": "datatype",
+    "href": "ref-teidata.replacement.html"
+  },
+  {
+    "ident": "teidata.sex",
+    "kind": "datatype",
+    "href": "ref-teidata.sex.html"
+  },
+  {
+    "ident": "teidata.temporal.iso",
+    "kind": "datatype",
+    "href": "ref-teidata.temporal.iso.html"
+  },
+  {
+    "ident": "teidata.temporal.w3c",
+    "kind": "datatype",
+    "href": "ref-teidata.temporal.w3c.html"
+  },
+  {
+    "ident": "teidata.temporal.working",
+    "kind": "datatype",
+    "href": "ref-teidata.temporal.working.html"
+  },
+  {
+    "ident": "teidata.text",
+    "kind": "datatype",
+    "href": "ref-teidata.text.html"
+  },
+  {
+    "ident": "teidata.truthValue",
+    "kind": "datatype",
+    "href": "ref-teidata.truthValue.html"
+  },
+  {
+    "ident": "teidata.unboundedCount",
+    "kind": "datatype",
+    "href": "ref-teidata.unboundedCount.html"
+  },
+  {
+    "ident": "teidata.version",
+    "kind": "datatype",
+    "href": "ref-teidata.version.html"
+  },
+  {
+    "ident": "teidata.versionNumber",
+    "kind": "datatype",
+    "href": "ref-teidata.versionNumber.html"
+  },
+  {
+    "ident": "teidata.word",
+    "kind": "datatype",
+    "href": "ref-teidata.word.html"
+  },
+  {
+    "ident": "teidata.xmlName",
+    "kind": "datatype",
+    "href": "ref-teidata.xmlName.html"
+  },
+  {
+    "ident": "teidata.xpath",
+    "kind": "datatype",
+    "href": "ref-teidata.xpath.html"
+  },
+  {
+    "ident": "teidata.xTruthValue",
+    "kind": "datatype",
+    "href": "ref-teidata.xTruthValue.html"
+  },
+  {
+    "ident": "teiHeader",
+    "kind": "element",
+    "href": "ref-teiHeader.html"
+  },
+  {
+    "ident": "text",
+    "kind": "element",
+    "href": "ref-text.html"
+  },
+  {
+    "ident": "textClass",
+    "kind": "element",
+    "href": "ref-textClass.html"
+  },
+  {
+    "ident": "title",
+    "kind": "element",
+    "href": "ref-title.html"
+  },
+  {
+    "ident": "titleStmt",
+    "kind": "element",
+    "href": "ref-titleStmt.html"
+  },
+  {
+    "ident": "unclear",
+    "kind": "element",
+    "href": "ref-unclear.html"
+  },
+  {
+    "ident": "w",
+    "kind": "element",
+    "href": "ref-w.html"
+  }
+]

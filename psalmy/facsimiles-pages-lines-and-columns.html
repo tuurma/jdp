@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>facsimiles-pages-lines-and-columns — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 5 </span>Facsimiles, pages, lines, and columns</h1><p class="tei-p tei-p2">Beginnings of each page, column and line in the primary source need to be encoded with
+          <a class="tei-gi tei-gi3" href="ref-pb.html">pb</a>, <a class="tei-gi tei-gi3" href="ref-cb.html">cb</a> and <a class="tei-gi tei-gi3" href="ref-lb.html">lb</a> elements, respectively.</p><div class="tei-div tei-div27" id="facsimiles-pages-lines-and-columns-pages"><h2 class="tei-head"><span class="heading-number">5.1 </span>Pages</h2>
+        
+        <p class="tei-p tei-p2">Page beginning markers must be placed as a first node in a <a class="tei-gi tei-gi3" href="ref-div.html">div</a>, or wherever
+          they occurr in the source text.</p>
+        
+        <p class="tei-p tei-p2">Page beginnings require <span class="tei-att tei-att1">@facs</span>, <span class="tei-att tei-att1">@n</span> and <span class="tei-att tei-att1">@xml:id</span>
+          attributes.</p>
+        
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-pb-cb-egXML-mt"><code data-language="xml"><span class="highlight"><span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">"psalm"</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">xml:id=</span><span class="s">"PF-001"</span> <span class="na">corresp=</span><span class="s">"commentary-ps-001"</span> <span class="na">synch=</span><span class="s">"ps-001"</span> <span class="na">ana=</span><span class="s">"#wisdom"</span><span class="nt">&gt;&lt;pb</span> <span class="na">facs=</span><span class="s">"334664cd-855a-4ffd-b87b-757d5c6841f6"</span> <span class="na">n=</span><span class="s">"3r"</span> <span class="na">xml:id=</span><span class="s">"PF-pb-001"</span><span class="nt">/&gt;&lt;cb</span> <span class="na">n=</span><span class="s">"a"</span><span class="nt">/&gt;&lt;head&gt;</span>Psalm 1<span class="nt">&lt;/head&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+</span></code></pre>
+        </div><div class="tei-div tei-div27" id="facsimiles-pages-lines-and-columns-facsimiles"><h2 class="tei-head"><span class="heading-number">5.2 </span>Facsimiles</h2>
+        
+        <p class="tei-p tei-p2">Default IIIF service is Polona, since most of the Psalter editions are 
+          available in facsimile from there.</p>
+        
+        <p class="tei-p tei-p2">The value of <span class="tei-att tei-att1">@facs</span> should be the facsimile identifier from Polona, as in the
+          example above. Facsimiles from the Jagiellonian IIIF service must use the
+          <span class="tei-code tei-code1">hub:</span> prefix and a relative path to the image resource.</p>
+        
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-facs-hub-egXML-mt"><code data-language="xml"><span class="highlight"><span class="nt">&lt;pb</span> <span class="na">xml:id=</span><span class="s">"PK-pb-013"</span> <span class="na">facs=</span><span class="s">"hub:PF/PF_page_013.tif"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;head&gt;</span>Pſalm Dawidow 1<span class="nt">&lt;/head&gt;</span>
+</span></code></pre>
+        
+        </div><div class="tei-div tei-div27" id="facsimiles-pages-lines-and-columns-lines"><h2 class="tei-head"><span class="heading-number">5.3 </span>Lines</h2>
+          <p class="tei-p tei-p2">Line beginnings should be marked just before the text occurring on the line in question.
+            The <a class="tei-gi tei-gi3" href="ref-lb.html">lb</a> element should be kept within the parent element of the text starting on that line,
+            usually <a class="tei-gi tei-gi3" href="ref-ab.html">ab</a>.</p>
+          
+          <p class="tei-p tei-p2">Where line beginning occurs within a word, it should be encoded in the original 
+            (not the regularized) form and additionally marked with a <span class="tei-att tei-att1">@break</span> attribute with a value <span class="tei-code tei-code1">no</span>.</p>
+          
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-lb-egXML-mt"><code data-language="xml"><span class="highlight"><span class="nt">&lt;choice&gt;</span>
+  <span class="nt">&lt;orig&gt;</span>cze<span class="nt">&lt;lb</span> <span class="na">break=</span><span class="s">"no"</span><span class="nt">/&gt;</span>køcych<span class="nt">&lt;/orig&gt;</span>
+  <span class="nt">&lt;reg&gt;</span>...<span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span>
+</span></code></pre>
+          
+        </div><div class="tei-div tei-div27" id="facsimiles-pages-lines-and-columns-columns"><h2 class="tei-head"><span class="heading-number">5.4 </span>Columns</h2>
+          
+          <p class="tei-p tei-p2">If the primary source is divided into columns, these may be marked with
+            <a class="tei-gi tei-gi3" href="ref-cb.html">cb</a>.</p>
+          
+          <p class="tei-p tei-p2">The first column beginning on the page directly follows the page beginning marker. 
+            Other column beginning markers are placed as they occur, but where possible are kept at the <a class="tei-gi tei-gi3" href="ref-ab.html">ab</a> level.</p> 
+          
+          <p class="tei-p tei-p2">Where column starts within a word, it should be marked only in the original form, not the regularized.
+          The line beginning marker naturally then follows the column beginning.</p>
+          
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-cb-egXML"><code data-language="xml"><span class="highlight"><span class="nt">&lt;ab</span> <span class="na">type=</span><span class="s">"verse"</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">xml:id=</span><span class="s">"PF-001-02"</span> <span class="na">synch=</span><span class="s">"ps-001-02"</span><span class="nt">&gt;&lt;lb/&gt;</span> ... meditabitur die ac nocte
+<span class="nt">&lt;cb</span> <span class="na">n=</span><span class="s">"b"</span><span class="nt">/&gt;&lt;lb/&gt;</span>Ale w zacone
+...
+<span class="nt">&lt;/ab&gt;</span>
+</span></code></pre>
+        </div></article>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="anatomy-of-verse.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">4</span>Anatomy of verse</span></a><a class="chapter-nav__next" href="morphological-analysis.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Morphological analysis</span></a></nav>
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="anatomy-of-verse.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">4</span>Anatomy of verse</span></a><a class="chapter-nav__next" href="morphological-analysis.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Morphological analysis</span></a></nav>
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>

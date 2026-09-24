@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ref-att.linguistic — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="spec spec--class"><h1><span class="spec__ident">att.linguistic</span></h1><p class="spec__gloss"></p><p class="spec__lead"><span class="tei-desc tei-desc1" lang="en" dir="ltr">provides a set of attributes concerning linguistic features of tokens, for usage within token-level elements, specifically <a class="tei-gi tei-gi3" href="ref-w.html">w</a> and <a class="tei-gi tei-gi3" href="ref-pc.html">pc</a> in the analysis module.</span></p><div class="spec__chips"><span class="spec__chip">Module <strong>analysis</strong></span></div><section class="spec-section" id="ref-attributes"><h2>Attributes</h2><div class="att-class"><a class="tei-ident tei-ident2" href="ref-att.lexicographic.normalized.html">att.lexicographic.normalized</a> <a href="ref-att.lexicographic.normalized.html#att-norm">@norm</a><a href="ref-att.lexicographic.normalized.html#att-orig">@orig</a><div class="att-class__nested"></div></div><dl class="att-def"><dt id="att-lemma"><span class="att-def__name">@lemma</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">provides a lemma (base form) for the word, typically uninflected and serving both as an identifier (e.g. in dictionary contexts, as a headword), and as a basis for potential inflections.</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.text.html">teidata.text</a></dd></dl>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ATTLING-egXML-fr"><code data-language="xml"><span class="highlight"><span class="nt">&lt;w</span> <span class="na">lemma=</span><span class="s">"wife"</span><span class="nt">&gt;</span>wives<span class="nt">&lt;/w&gt;</span>
+</span></code></pre>
+      </dd><dt id="att-lemmaRef"><span class="att-def__name">@lemmaRef</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">provides a pointer to a definition of the lemma for the
+        word, for example in an online lexicon.</span></dt><dd><dl><dt>Status</dt><dd></dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.pointer.html">teidata.pointer</a></dd></dl>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ATTLING-egXML-rw"><code data-language="xml"><span class="highlight"><span class="nt">&lt;w</span> <span class="na">type=</span><span class="s">"verb"</span> <span class="na">lemma=</span><span class="s">"hit"</span> <span class="na">lemmaRef=</span><span class="s">"http://www.example.com/lexicon/hitvb.xml"</span><span class="nt">&gt;</span>hitt<span class="nt">&lt;m</span> <span class="na">type=</span><span class="s">"suffix"</span><span class="nt">&gt;</span>ing<span class="nt">&lt;/m&gt;&lt;/w&gt;</span>
+</span></code></pre>
+      </dd><dt id="att-pos"><span class="att-def__name">@pos</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">(part of speech) indicates the part of speech assigned to a token 
+        (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference 
+        vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.).</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.text.html">teidata.text</a></dd></dl>
+        <p class="tei-p tei-p2">The German sentence <span class="tei-q tei-q3 inline-quote">Wir fahren in den Urlaub.</span> tagged with the Stuttgart-Tuebingen-Tagset (STTS).</p>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ATTLING-egXML-hd"><code data-language="xml"><span class="highlight"><span class="nt">&lt;s&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"PPER"</span><span class="nt">&gt;</span>Wir<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"VVFIN"</span><span class="nt">&gt;</span>fahren<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"APPR"</span><span class="nt">&gt;</span>in<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"ART"</span><span class="nt">&gt;</span>den<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"NN"</span><span class="nt">&gt;</span>Urlaub<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"$."</span><span class="nt">&gt;</span>.<span class="nt">&lt;/w&gt;</span>
+<span class="nt">&lt;/s&gt;</span>
+</span></code></pre>
+      </dd><dt id="att-msd"><span class="att-def__name">@msd</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">(morphosyntactic description) supplies
+        morphosyntactic information for a token, usually according to some official reference
+        vocabulary (e.g. for German: <a class="tei-ref tei-ref2" href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/TagSets/stts-1999.pdf">STTS-large tagset</a>; for a feature description system designed as (pragmatically) universal, see <a class="tei-ref tei-ref2" href="http://universaldependencies.org/u/feat/index.html">Universal Features</a>).</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.text.html">teidata.text</a></dd></dl>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ATTLING-egXML-hw"><code data-language="xml"><span class="highlight"><span class="nt">&lt;ab&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"PPER"</span> <span class="na">msd=</span><span class="s">"1.Pl.*.Nom"</span><span class="nt">&gt;</span>Wir<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"VVFIN"</span> <span class="na">msd=</span><span class="s">"1.Pl.Pres.Ind"</span><span class="nt">&gt;</span>fahren<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"APPR"</span> <span class="na">msd=</span><span class="s">"--"</span><span class="nt">&gt;</span>in<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"ART"</span> <span class="na">msd=</span><span class="s">"Def.Masc.Akk.Sg"</span><span class="nt">&gt;</span>den<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">pos=</span><span class="s">"NN"</span> <span class="na">msd=</span><span class="s">"Masc.Akk.Sg"</span><span class="nt">&gt;</span>Urlaub<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;pc</span> <span class="na">pos=</span><span class="s">"$."</span> <span class="na">msd=</span><span class="s">"--"</span><span class="nt">&gt;</span>.<span class="nt">&lt;/pc&gt;</span>
+<span class="nt">&lt;/ab&gt;</span>
+</span></code></pre>
+      </dd><dt id="att-join"><span class="att-def__name">@join</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">when present, provides information on whether the token in question is adjacent to another, and if so, on which side.</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.text.html">teidata.text</a></dd><dt>Legal values</dt><dd><dl class="val-list"><dt><code>no</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">the token is not adjacent to another</span></dd><dt><code>left</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">there is no whitespace on the left side of the token</span></dd><dt><code>right</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">there is no whitespace on the right side of the token</span></dd><dt><code>both</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">there is no whitespace on either side of the token</span></dd><dt><code>overlap</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">the token overlaps with another; other devices (specifying the extent and the area of overlap) are needed to more precisely locate this token in the character stream</span></dd></dl></dd></dl>
+        <p class="tei-p tei-p2">The example below assumes that the lack of whitespace is marked redundantly, by using the appropriate values of <span class="tei-att tei-att1">@join</span>.</p>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ATTLING-egXML-cj"><code data-language="xml"><span class="highlight"><span class="nt">&lt;s&gt;</span>
+  <span class="nt">&lt;pc</span> <span class="na">join=</span><span class="s">"right"</span><span class="nt">&gt;</span>"<span class="nt">&lt;/pc&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">join=</span><span class="s">"left"</span><span class="nt">&gt;</span>Friends<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w&gt;</span>will<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w&gt;</span>be<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">join=</span><span class="s">"right"</span><span class="nt">&gt;</span>friends<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;pc</span> <span class="na">join=</span><span class="s">"both"</span><span class="nt">&gt;</span>.<span class="nt">&lt;/pc&gt;</span>
+  <span class="nt">&lt;pc</span> <span class="na">join=</span><span class="s">"left"</span><span class="nt">&gt;</span>"<span class="nt">&lt;/pc&gt;</span>
+<span class="nt">&lt;/s&gt;</span>
+</span></code></pre>
+        <p class="tei-p tei-p2">Note that a project may make a decision to only indicate lack of whitespace in one
+          direction, or do that non-redundantly. The existing proposal is the broadest possible,
+          on the assumption that we adopt the "streamable view", where all the information on the
+          current element needs to be represented locally.</p>
+      </dd></dl></section><section class="spec-section" id="ref-classes"><h2>Classes and content</h2><dl class="spec-facts"><dt id="ref-usedBy">Used by</dt><dd><div class="spec-links"></div></dd><dt id="ref-members">Members</dt><dd><div class="spec-links"><a class="tei-gi tei-gi3" href="ref-pc.html">pc</a><span class="tei-seg tei-seg3 muted">analysis</span><a class="tei-gi tei-gi3" href="ref-w.html">w</a><span class="tei-seg tei-seg3 muted">analysis</span></div></dd></dl></section><section class="spec-section" id="ref-notes"><h2>Note</h2><div class="tei-remarks tei-remarks1" lang="en" dir="ltr">
+    <p class="tei-p tei-p2">These attributes make it possible to encode simple language corpora and to add a layer of
+      linguistic information to any tokenized resource. See section <a class="tei-ptr tei-ptr8" href="#AILALW">AILALW</a> for
+      discussion.</p>
+      <p class="tei-p tei-p2">These guidelines provide no semantic basis or suggested
+      precedence when both <span class="tei-att tei-att1">@lemma</span> and <span class="tei-att tei-att1">@lemmaRef</span> are
+      provided. For this reason simultaneous use of both is not
+      recommended for interchange unless documentation explaining the
+      use is provided, probably in an ODD customization.</p>
+  </div></section></article>
+      
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>

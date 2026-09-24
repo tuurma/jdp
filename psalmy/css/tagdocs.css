@@ -1,0 +1,396 @@
+/* Generated stylesheet. Do not edit. */
+
+/* base rules for runtime-emitted markup */
+.alternate {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.alternate .altcontent {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    min-width: 16rem;
+    max-width: 28rem;
+    white-space: normal;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.alternate:hover .altcontent,
+.alternate:focus-within .altcontent {
+    display: block;
+}
+
+/* tei:cb → break behaviour type=column (emitted as div.tei-cb).
+   Folio encoding uses cb[@n='1'] to mark the start of column 1 — that must
+   not force a CSS column break, or the first column stays empty. Later cbs
+   (n=2, …) and cbs without @n do force a break.
+
+   Screen-only: `column` is meaningless outside a CSS multicol container, and
+   the CSS Fragmentation spec has an unsupported break value fall back to the
+   next fragmentation context up — for Prince rendering paged media with no
+   multicol ancestor, that is the page itself. Scoped to `screen` so a print
+   or EPUB build (paged, not columned) never sees a `cb` as a page break. */
+@media screen {
+    .tei-cb:not([data-n="1"]) {
+        display: block;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        visibility: hidden;
+        break-before: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .content:has(.margin-note) {
+        margin-right: 200px;
+    }
+
+    .margin-note {
+        background: rgba(153, 153, 153, 0.2);
+        display: block;
+        font-size: small;
+        margin-right: -200px;
+        margin-bottom: 5px;
+        padding: 5px 0;
+        float: right;
+        clear: both;
+        width: 180px;
+    }
+
+    .margin-note .n {
+        color: #777777;
+    }
+}
+
+
+.simple_allcaps { text-transform: uppercase; }
+.simple_blackletter { font-family: fantasy; }
+.simple_bold { font-weight: bold; }
+.simple_bottombraced { padding-bottom: 2pt; border-bottom: dashed gray 2pt; }
+.simple_block { display:block; }
+.simple_boxed { padding: 2pt; border: solid black 1pt; }
+.simple_centre { text-align: center; }
+.simple_cursive { font-family: cursive; }
+.simple_doublestrikethrough { text-decoration: line-through; color: red; }
+.simple_doubleunderline { text-decoration: underline; color: red; }
+.simple_dropcap { font-size : 6em; font-family: cursive; font-weight : bold; vertical-align: top; height: 1em; line-height: 1em; float : left; width : 1em; color : #c00; margin: 0em; padding: 0px; }
+.simple_float { float:right; display: block; font-size: smaller; clear: right; padding: 4pt; width: 15%; }
+.simple_inline { display:inline; }
+.simple_italic { font-style: italic; }
+.simple_justify { text-align: justify; }
+.simple_larger { font-size: larger; }
+.simple_left { text-align: left; }
+.simple_leftbraced { padding-left: 2pt; border-left: dotted gray 2pt; }
+.simple_letterspace { letter-spacing: 0.5em; }
+.simple_literal { font-family:monospace; white-space:pre; }
+.simple_normalstyle { font-style:roman; }
+.simple_normalweight { font-weight:normal; }
+.simple_right { text-align: right; }
+.simple_rightbraced { padding-right: 2pt; border-right: dotted gray 2pt; }
+.simple_rotateleft { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+.simple_rotateright { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+.simple_rules { border: 1px solid black; padding: 2px;border-collapse:collapse;border-spacing:0; }
+.simple_smallcaps { font-variant: small-caps; }
+.simple_smaller { font-size: smaller; }
+.simple_strikethrough { text-decoration: line-through; }
+.simple_subscript { vertical-align: bottom; font-size: smaller; }
+.simple_superscript { vertical-align: super; font-size: smaller; }
+.simple_topbraced { padding-top: 2pt; border-top: dotted gray 2pt; }
+.simple_typewriter { font-family:monospace; }
+.simple_underline { text-decoration: underline; }
+.simple_wavyunderline { text-decoration: underline; text-decoration-style: wavy; }
+/* external styles loaded from tp.css */
+/* SPDX-FileCopyrightText: 2017-2026 e-editiones and individual contributors
+   SPDX-License-Identifier: CC-BY-4.0
+
+   From TEI Publisher: the stylesheet its ODD names in tagsDecl/@source. */
+
+
+/* 
+.context
+general handle for all semantic context annotations: 
+people, places, organizations etc */
+
+.context:not(.disable) {
+    /* highlight colour for when not toggled to .disable */
+    color: grey;
+}
+
+.pb {
+    float: right;
+    color: grey;
+    margin-left: 2rem;
+    font-size: 1em;
+}
+
+.pb:not(.facs) {
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 1rem; 
+    padding: .5em;
+}
+
+/* 
+
+Toggle styles for 
+
+- line breaks and hyphens generated via ODD 
+- choice and choice-alternate for client-side switching of source/editorial view 
+*/
+    .lb.toggle {
+        display: none;
+    }
+
+	.lb-hyphen.toggle {
+        display: none;
+    }
+
+    .choice-alternate {
+		display: none;
+	}
+
+	.choice-alternate.toggle {
+		display: inline;
+	}
+
+	.choice.toggle {
+	    display: none;
+	}
+
+/* Default styles for TEI elements */
+    
+.tei-title {
+    font-style: italic;
+}
+
+.tei-add {
+    color: green;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+/* Quotes: inline and block level */
+    .tei-quote.inline-quote::before {
+        content: '‘';
+    }
+    .tei-quote.inline-quote::after {                
+        content: '’';
+    }
+    .tei-quote.block-quote {
+        margin: 2rem;
+    }
+
+    .tei-q.inline-quote::before {
+        content: '‘';
+    }
+    .tei-q.inline-quote::after {                
+        content: '’';
+    }
+    .tei-q.block-quote {
+        margin: 2rem;
+    }
+
+.tei-dateline {
+    text-align: right;
+}
+
+.tei-closer .tei-signed,
+.tei-closer .tei-salute {
+    text-align: right;
+}
+
+.tei-castList {
+    list-style: ordered;
+}
+
+.tei-code {
+    font-family: monospace;
+}
+
+.tei-foreign {
+    font-style: italic;
+}
+
+.tei-damage {
+    color: grey;
+}
+
+.tei-gap {
+    color: grey;
+}
+
+.tei-figure {
+    margin: 1rem 0;
+    width: fit-content;
+}
+
+.tei-figure .figure-head {
+    font-style: italic;
+}
+
+.table-head {
+    font-style: italic;
+}
+
+.lg-head {
+    font-style: italic;
+}
+
+.list-head {
+    font-weight: bold;
+}
+
+.tei-hi {
+    font-style: italic;
+}
+
+.tei-l {
+    margin-left: 1em;
+}
+
+.tei-row.row-label {
+    font-weight: bold;
+}
+
+.tei-ex::before {
+    content: '(';
+}
+
+.tei-ex::after {                   
+    content: ')';
+}
+
+.tei-sic.sic::before {
+    content: '{';
+}
+
+.tei-sic.sic::after {                   
+    content: '}';
+}
+
+.tei-signed {
+    font-style: italic;
+}
+
+.tei-signed.signed {
+    text-align: right;
+}
+
+.tei-speaker {
+    font-style: italic;
+}
+
+.tei-stage {
+    font-style: italic;
+}
+
+.tei-supplied::before {
+    content: '[';
+}
+
+.tei-supplied::after {
+    content: ']';
+}
+
+.tei-table {
+    font-size: smaller;
+}
+
+.tei-titlePage {
+    text-align: center;
+}
+
+.tei-unclear::after {
+    content: ' [?] ';
+}
+
+div.tei-person,
+ul.tei-person {
+    margin-bottom: var(--s-1);
+}
+
+.tei-death::before {
+    content: ' – ';
+}
+
+.align-center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.occupation {
+    margin: 1rem;
+}
+
+p:empty,
+ul:empty {
+    display: none;
+}
+/* external styles loaded from tagdocs.css */
+/* SPDX-FileCopyrightText: 2026 e-editiones
+   SPDX-License-Identifier: CC-BY-4.0 */
+
+.tei-ident, .tei-dataRef, .tei-gi, .tei-tag { font-family: ui-monospace, Menlo, Consolas, monospace; }
+.tei-att { font-family: ui-monospace, Menlo, Consolas, monospace; }
+.tei-gloss { font-style: italic; color: var(--doc-muted, #5b6b7c); }
+.tei-soCalled::before, .tei-mentioned::before { content: '“'; }
+.tei-soCalled::after, .tei-mentioned::after { content: '”'; }
+.tei-val { font-family: ui-monospace, Menlo, Consolas, monospace; }
+/* TEI logo orange (#F7A823) / menubar blue (#0059A8), darkened for body text. */
+.tei-term {
+  font-style: italic;
+  color: var(--doc-term, #0059A8);
+}
+.code, .tei-code {
+  font-family: var(--doc-mono, ui-monospace, Menlo, Consolas, monospace);
+  font-size: 0.92em;
+  color: var(--doc-code, #9a6400);
+  background: var(--doc-code-bg, rgba(247, 168, 35, 0.14));
+  border-radius: 0.2rem;
+  padding: 0.05em 0.28em;
+}
+.tei-remarks { margin: 0.5rem 0; }
+.tei-specList { list-style: none; padding-left: 0; }
+.tei-specList .specDesc { margin: 0.2rem 0; }
+.specList-elementSpec,
+.specList-classSpec,
+.specList-macroSpec,
+.specList-dataSpec { font-weight: 600; }
+.specList-elementSpec:before { content: "<"; }
+.specList-elementSpec:after { content: ">"; }
+.egXML, .tei-eg {
+  display: block;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  overflow: auto;
+}
+
+
+/* Model rendition styles */
+.tei-corr2:before { content: '['; }
+.tei-corr2:after { content: ']'; }
+.tei-del1 { text-decoration: line-through; }
+.tei-gap3:before { content: "[.. ..]"; }
+.tei-gap4:before { content: '[...]'; }
+.tei-pb8 { display: block; margin-left: 4pt; color: grey; float: right; }
+.tei-pb8:before { content: '[Page '; }
+.tei-pb8:after { content: ']'; }
+.tei-person13 { display: flex; gap: var(--s-1); flex-wrap: wrap; }

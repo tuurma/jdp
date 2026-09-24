@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>structure — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 2 </span>General structure of the Psalter</h1><p class="tei-p tei-p2">Each of the Psalters, e.g. Psałterz floriański, or Psałterz krakowski is represented as
+          an individual TEI document.</p><p class="tei-p tei-p2">Such a document is composed of three parts: the <a class="tei-gi tei-gi3" href="ref-teiHeader.html">teiHeader</a>, <a class="tei-gi tei-gi3" href="ref-standOff.html">standOff</a> and
+            <a class="tei-gi tei-gi3" href="ref-text.html">text</a> sections.</p><p class="tei-p tei-p2">The <a class="tei-gi tei-gi3" href="ref-TEI.html">TEI</a> element must carry an obligatory <span class="tei-att tei-att1">@xml:id</span> attribute with a
+          psalter identifier, e.g. <span class="tei-code tei-code1">PK</span>.</p><p class="tei-p tei-p2">The <a class="tei-gi tei-gi3" href="ref-div.html">div</a> element is used as a main organizational unit in the text, representing
+          a single psalm. Thus in the <a class="tei-gi tei-gi3" href="ref-text.html">text</a>/<a class="tei-gi tei-gi3" href="ref-body.html">body</a> section, nothing but a series of <a class="tei-gi tei-gi3" href="ref-div.html">div</a>s may occur.</p><p class="tei-p tei-p2">The <a class="tei-gi tei-gi3" href="ref-text.html">text</a> and <a class="tei-gi tei-gi3" href="ref-body.html">body</a> hold the annotated manuscript or printed primary source.</p><pre class="tei-eg_egXML tei-eg_egXML2 egXML code"><code data-language="xml"><span class="highlight"><span class="nt">&lt;TEI</span> <span class="na">xml:lang=</span><span class="s">"pl"</span> <span class="na">xml:id=</span><span class="s">"PK"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;teiHeader&gt;</span>
+...
+<span class="nt">&lt;/teiHeader&gt;</span>
+  <span class="nt">&lt;standOff&gt;</span>
+...
+<span class="nt">&lt;/standOff&gt;</span>
+  <span class="nt">&lt;text&gt;</span>
+    <span class="nt">&lt;body&gt;&lt;div</span> <span class="na">xml:id=</span><span class="s">"structure-psalm-1"</span><span class="nt">&gt;&lt;head&gt;</span>Psalm 1<span class="nt">&lt;/head&gt;</span>
+...
+<span class="nt">&lt;/div&gt;&lt;div</span> <span class="na">xml:id=</span><span class="s">"structure-psalm-2"</span><span class="nt">&gt;&lt;head&gt;</span>Psalm 2<span class="nt">&lt;/head&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+
+...
+<span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/text&gt;</span>
+<span class="nt">&lt;/TEI&gt;</span>
+</span></code></pre></article>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="identifiers.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">1</span>Identifiers and referencing mechanisms</span></a><a class="chapter-nav__next" href="division.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>Anatomy of a psalm</span></a></nav>
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="identifiers.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">1</span>Identifiers and referencing mechanisms</span></a><a class="chapter-nav__next" href="division.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>Anatomy of a psalm</span></a></nav>
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>

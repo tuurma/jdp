@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>anatomy-of-verse — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 4 </span>Anatomy of verse</h1><p class="tei-p tei-p2">A number of high-level phenomena can be encoded as descendants of verse. The elements
+          allowed in verse (<a class="tei-gi tei-gi3" href="ref-ab.html">ab</a>) are:</p><ul class="tei-list tei-list20">
+          <li class="tei-item tei-item27">page (<a class="tei-gi tei-gi3" href="ref-pb.html">pb</a>), line (<a class="tei-gi tei-gi3" href="ref-lb.html">lb</a>), and column (<a class="tei-gi tei-gi3" href="ref-cb.html">cb</a>) beginnings</li>
+          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-seg.html">seg</a>: an arbitrary segment</li>
+          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-w.html">w</a>: a word with morphological analysis results</li>
+          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-choice.html">choice</a>: phrase with spelling regularization</li>
+          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-app.html">app</a>: phrase with alternate readings across extant witnesses</li>
+
+        </ul><div class="tei-div tei-div27" id="anatomy-of-verse-multi-lingual-verses-pf">
+          <h2 class="tei-head"><span class="heading-number">4.1 </span>Multi-lingual verses (PF)</h2>
+          <p class="tei-p tei-p2">In <span class="tei-hi tei-hi1">Psałterz floriański</span>, each verse is repeated three times, in Latin, Polish
+            and German. In this case, each language version is wrapped in a <a class="tei-gi tei-gi3" href="ref-seg.html">seg</a> element
+            with <span class="tei-att tei-att1">@xml:lang</span> and <span class="tei-att tei-att1">@rend</span> attributes. No other content is present
+            between these segments.</p>
+          <p class="tei-p tei-p2"><span class="tei-att tei-att1">@xml:lang</span> values are <span class="tei-code tei-code1">la</span> for Latin, <span class="tei-code tei-code1">de</span> for German
+            and <span class="tei-code tei-code1">pl</span> for Polish. See the simplified example below.</p>
+
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-seg-ab-egXML-mt"><code data-language="xml"><span class="highlight"><span class="nt">&lt;seg</span> <span class="na">xml:lang=</span><span class="s">"la"</span> <span class="na">rend=</span><span class="s">"ab"</span><span class="nt">&gt;</span>Beatus vir qui non abiit...<span class="nt">&lt;/seg&gt;</span>
+<span class="nt">&lt;seg</span> <span class="na">xml:lang=</span><span class="s">"de"</span> <span class="na">rend=</span><span class="s">"ab"</span><span class="nt">&gt;</span>Der zelige man der nicht gink...<span class="nt">&lt;/seg&gt;</span>
+</span></code></pre>
+        </div><div class="tei-div tei-div27" id="anatomy-of-verse-spelling-regularization-choice">
+          <h2 class="tei-head"><span class="heading-number">4.2 </span>Spelling regularization (choice)</h2>
+          <p class="tei-p tei-p2">Words or phrases where spelling of the primary source differs from the transcription
+            are wrapped in a <a class="tei-gi tei-gi3" href="ref-choice.html">choice</a> with <a class="tei-gi tei-gi3" href="ref-orig.html">orig</a> (for the transliteration) and
+              <a class="tei-gi tei-gi3" href="ref-reg.html">reg</a> (for transcription).</p>
+
+          <p class="tei-p tei-p2">Regularized version may include further morphological and phonetic analysis, see
+            further below.</p>
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-choice-egXML-e1"><code data-language="xml"><span class="highlight"><span class="nt">&lt;choice&gt;</span>
+  <span class="nt">&lt;orig&gt;</span>møsz<span class="nt">&lt;/orig&gt;</span>
+  <span class="nt">&lt;reg&gt;</span>
+    <span class="nt">&lt;w</span> <span class="na">lemma=</span><span class="s">"Mąż"</span> <span class="na">msd=</span><span class="s">"subst:sg:nom:m"</span><span class="nt">&gt;</span>mąż<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span>
+</span></code></pre>
+
+          <p class="tei-p tei-p2">Where regularized spelling involves multiple orthographic words, each of these MUST be
+            encoded with <a class="tei-gi tei-gi3" href="ref-w.html">w</a>, and whitespace between them explicitly encoded with
+            <a class="tei-gi tei-gi3" href="ref-pc.html">pc</a>. Cf. the example below:</p>
+
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-choice-egXML-e2"><code data-language="xml"><span class="highlight"><span class="nt">&lt;choice&gt;</span>
+  <span class="nt">&lt;orig&gt;</span>neszedl<span class="nt">&lt;/orig&gt;</span>
+  <span class="nt">&lt;reg&gt;</span>
+    <span class="nt">&lt;w</span> <span class="na">lemma=</span><span class="s">"Nie"</span> <span class="na">msd=</span><span class="s">"1:part"</span><span class="nt">&gt;</span>nie<span class="nt">&lt;/w&gt;</span>
+    <span class="nt">&lt;pc</span> <span class="na">msd=</span><span class="s">"interp"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;w</span> <span class="na">lemma=</span><span class="s">"iść"</span> <span class="na">msd=</span><span class="s">"ppraetact2:sg:nom:m:imperf:aff:ncompos"</span><span class="nt">&gt;</span>szedł<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span>
+</span></code></pre>
+          <div class="tei-div tei-div27" id="anatomy-of-verse-punctuation"><h3 class="tei-head"><span class="heading-number">4.2.1 </span>Punctuation</h3>
+            <p class="tei-p tei-p2">Punctuation should only be marked up where it requires regularization, otherwise it should just be transcribed.</p>
+            <p class="tei-p tei-p2">Care must be taken not to introduce unnecessary whitespace between punctuation and preceding text.</p>
+            
+            <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-pc-egXML-e2"><code data-language="xml"><span class="highlight"><span class="nt">&lt;choice&gt;</span>
+  <span class="nt">&lt;orig&gt;</span>
+    <span class="nt">&lt;pc&gt;</span>/<span class="nt">&lt;/pc&gt;</span>
+  <span class="nt">&lt;/orig&gt;</span>
+  <span class="nt">&lt;reg&gt;</span>
+    <span class="nt">&lt;pc&gt;</span>,<span class="nt">&lt;/pc&gt;</span>
+  <span class="nt">&lt;/reg&gt;</span>
+<span class="nt">&lt;/choice&gt;</span>
+</span></code></pre>
+          </div>
+        </div></article>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="division.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>Anatomy of a psalm</span></a><a class="chapter-nav__next" href="facsimiles-pages-lines-and-columns.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles, pages, lines, and columns</span></a></nav>
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="division.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>Anatomy of a psalm</span></a><a class="chapter-nav__next" href="facsimiles-pages-lines-and-columns.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles, pages, lines, and columns</span></a></nav>
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>

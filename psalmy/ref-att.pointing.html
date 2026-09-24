@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ref-att.pointing — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="spec spec--class"><h1><span class="spec__ident">att.pointing</span></h1><p class="spec__gloss"></p><p class="spec__lead"><span class="tei-desc tei-desc1" lang="en" dir="ltr">provides a set of attributes used by all elements which point
+  to other elements by means of one or more URI references.</span></p><div class="spec__chips"><span class="spec__chip">Module <strong>tei</strong></span></div><section class="spec-section" id="ref-attributes"><h2>Attributes</h2><dl class="att-def"><dt id="att-targetLang"><span class="att-def__name">@targetLang</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">specifies the language of the content to be found at the destination referenced by <span class="tei-att tei-att1">@target</span>, using a <span class="tei-soCalled tei-soCalled1">language tag</span> generated
+        according to <a class="tei-ref tei-ref2" href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</a>.</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.language.html">teidata.language</a></dd></dl>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="class-attr-pointing-egXML-pe"><code data-language="xml"><span class="highlight"><span class="nt">&lt;linkGrp</span> <span class="na">xml:id=</span><span class="s">"pol-swh_aln_2.1-linkGrp"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ptr</span> <span class="na">xml:id=</span><span class="s">"pol-swh_aln_2.1.1-ptr"</span> <span class="na">target=</span><span class="s">"pol/UDHR/text.xml#pol_txt_1-head"</span> <span class="na">type=</span><span class="s">"tuv"</span> <span class="na">targetLang=</span><span class="s">"pl"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;ptr</span> <span class="na">xml:id=</span><span class="s">"pol-swh_aln_2.1.2-ptr"</span> <span class="na">target=</span><span class="s">"swh/UDHR/text.xml#swh_txt_1-head"</span> <span class="na">type=</span><span class="s">"tuv"</span> <span class="na">targetLang=</span><span class="s">"sw"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/linkGrp&gt;</span>
+</span></code></pre>
+        <p class="tei-p tei-p2">In the example above, the <span class="tei-gi tei-gi4">linkGrp</span> combines
+        pointers at parallel fragments of the <span class="tei-title tei-title10">Universal
+        Declaration of Human Rights</span>: one of them is in Polish,
+        the other in Swahili.</p>
+      </dd><dt id="att-target"><span class="att-def__name">@target</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">specifies the destination of the reference by supplying one or more URI References.</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd>1–∞ occurrences of <a class="tei-dataRef tei-dataRef2" href="ref-teidata.pointer.html">teidata.pointer</a> separated by whitespace</dd></dl></dd><dt id="att-evaluate"><span class="att-def__name">@evaluate</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">specifies the intended meaning when the target of a pointer is itself a pointer.</span></dt><dd><dl><dt>Status</dt><dd>Optional</dd><dt>Datatype</dt><dd><a class="tei-dataRef tei-dataRef2" href="ref-teidata.enumerated.html">teidata.enumerated</a></dd><dt>Legal values</dt><dd><dl class="val-list"><dt><code>all</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer.</span></dd><dt><code>one</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer.</span></dd><dt><code>none</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target.</span></dd></dl></dd></dl></dd></dl></section><section class="spec-section" id="ref-classes"><h2>Classes and content</h2><dl class="spec-facts"><dt id="ref-usedBy">Used by</dt><dd><div class="spec-links"></div></dd><dt id="ref-members">Members</dt><dd><div class="spec-links"><a class="tei-gi tei-gi3" href="ref-catRef.html">catRef</a><span class="tei-seg tei-seg3 muted">header</span><a class="tei-gi tei-gi3" href="ref-note.html">note</a><span class="tei-seg tei-seg3 muted">core</span><a class="tei-gi tei-gi3" href="ref-ref.html">ref</a><span class="tei-seg tei-seg3 muted">core</span></div></dd></dl></section></article>
+      
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ref-att.placement — TEI Psalmy</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="css/tagdocs.css">
+  <script src="theme.js"></script>
+</head>
+<body class="doc doc--with-nav">
+  <a class="doc-skip" href="#doc-content">Skip to content</a>
+  <header class="doc-header">
+    <a class="doc-brand" href="index.html">
+      <img class="doc-brand__logo" src="tei-logo.svg" alt="TEI" width="30" height="30">
+      <span class="doc-brand__title">TEI Psalmy</span>
+    </a>
+    
+    <span class="doc-header__spacer"></span>
+    <form class="doc-search" role="search" data-idents="idents.json">
+      <label class="visually-hidden" for="doc-q">Find an element, class or macro</label>
+      <input id="doc-q" type="search" placeholder="p, att.global, model.pLike…" autocomplete="off">
+      <ul class="doc-search__hits" hidden></ul>
+    </form>
+    <button class="doc-theme" type="button" data-doc-theme hidden aria-label="Switch theme">
+      <svg class="doc-theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              d="M15.2 3.6A8.6 8.6 0 1 0 20.4 14 6.8 6.8 0 0 1 15.2 3.6z"/>
+      </svg>
+      <svg class="doc-theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              d="M12 3.2v1.8M12 19v1.8M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3.2 12h1.8M19 12h1.8M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </svg>
+    </button>
+  </header>
+  <div class="doc-shell">
+    
+    <aside class="doc-sidebar" aria-label="Site">
+      <nav>
+        <p class="doc-sidebar__label">Contents</p>
+        <ul class="tei-list tei-list4">
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="index.html">Home</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ELEMENTS.html">Elements</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-MODEL.html">Model classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-CLASSES-ATTS.html">Attribute classes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-ATTS.html">Attributes</a></li>
+  <li class="tei-item tei-item27"><a class="tei-ref tei-ref2" href="REF-MACROS.html">Macros</a></li>
+</ul>
+      </nav>
+    </aside>
+    
+    <main class="doc-main" id="doc-content">
+      <article class="spec spec--class"><h1><span class="spec__ident">att.placement</span></h1><p class="spec__gloss"></p><p class="spec__lead"><span class="tei-desc tei-desc1" lang="en" dir="ltr">provides attributes for describing where on the source page or
+  object a textual element appears.</span></p><div class="spec__chips"><span class="spec__chip">Module <strong>tei</strong></span></div><section class="spec-section" id="ref-attributes"><h2>Attributes</h2><dl class="att-def"><dt id="att-place"><span class="att-def__name">@place</span><span class="tei-desc tei-desc1" lang="en" dir="ltr">specifies where this item is placed.</span></dt><dd><dl><dt>Status</dt><dd>Recommended</dd><dt>Datatype</dt><dd>1–∞ occurrences of <a class="tei-dataRef tei-dataRef2" href="ref-teidata.enumerated.html">teidata.enumerated</a> separated by whitespace</dd><dt>Suggested values</dt><dd><dl class="val-list"><dt><code>top</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">at the top of the page</span></dd><dt><code>bottom</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">at the foot of the page</span></dd><dt><code>margin</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">in the margin (left, right, or both)</span></dd><dt><code>opposite</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">on the opposite, i.e. facing, page</span></dd><dt><code>overleaf</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">on the other side of the leaf</span></dd><dt><code>above</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">above the line</span></dd><dt><code>right</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">to the right,
+	  e.g. to the right of a vertical line of text, or to the right of a figure</span></dd><dt><code>below</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">below the line</span></dd><dt><code>left</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">to the left,
+	  e.g. to the left of a vertical line of text, or to the left of a figure</span></dd><dt><code>end</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">at the end of e.g. chapter or volume.</span></dd><dt><code>inline</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr">within the body of the text.</span></dd><dt><code>inspace</code></dt><dd><span class="tei-desc tei-desc1" lang="en" dir="ltr"> in a predefined space, for example left by an earlier scribe.</span></dd></dl></dd></dl>
+        <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="class-attr-placement-egXML-vs"><code data-language="xml"><span class="highlight"><span class="nt">&lt;add</span> <span class="na">place=</span><span class="s">"margin"</span><span class="nt">&gt;</span>[An addition written in the margin]<span class="nt">&lt;/add&gt;</span>
+<span class="nt">&lt;add</span> <span class="na">place=</span><span class="s">"bottom opposite"</span><span class="nt">&gt;</span>[An addition written at the
+foot of the current page and also on the facing page]<span class="nt">&lt;/add&gt;</span>
+</span></code></pre>
+      </dd></dl></section><section class="spec-section" id="ref-classes"><h2>Classes and content</h2><dl class="spec-facts"><dt id="ref-usedBy">Used by</dt><dd><div class="spec-links"></div></dd><dt id="ref-members">Members</dt><dd><div class="spec-links"><a class="tei-ident tei-ident2" href="ref-att.transcriptional.html">att.transcriptional</a><a class="tei-gi tei-gi3" href="ref-div.html">div</a><span class="tei-seg tei-seg3 muted">textstructure</span><a class="tei-gi tei-gi3" href="ref-head.html">head</a><span class="tei-seg tei-seg3 muted">core</span><a class="tei-gi tei-gi3" href="ref-note.html">note</a><span class="tei-seg tei-seg3 muted">core</span></div></dd></dl></section></article>
+      
+    </main>
+    <aside class="doc-aside" aria-label="On this page" data-page-toc>
+      <p class="doc-aside__label">On this page</p>
+      <ul></ul>
+      
+    </aside>
+  </div>
+  <footer class="doc-footer">
+    <span>TEI Psalmy</span>
+    <span>Distributed under a Creative Commons Attribution-ShareAlike 4.0 International</span>
+  </footer>
+  <script src="search.js" defer></script>
+</body>
+</html>
