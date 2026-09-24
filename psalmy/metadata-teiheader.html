@@ -51,16 +51,21 @@
     </aside>
     
     <main class="doc-main" id="doc-content">
-      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 9 </span>Metadata (teiHeader)</h1><ul class="tei-list tei-list20 numbered">
-          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-teiHeader.html">teiHeader</a> from the header module to store required metadata</li>
-          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-fileDesc.html">fileDesc</a> from the header module to record information about this
-            file</li>
-          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-titleStmt.html">titleStmt</a> from the header module to record title and contributors</li>
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 9 </span>Metadata (teiHeader)</h1><ul class="tei-list tei-list20 numbered">          
+          <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-titleStmt.html">titleStmt</a>to record the psalter title and contributors</li>
           <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-sourceDesc.html">sourceDesc</a> from the header module to record information about the source
-            document (or documents where multiple witnesses were used)</li>
+            document (or documents where multiple witnesses were used); there must be
+            as many nested <a class="tei-gi tei-gi3" href="ref-bibl.html">bibl</a> elements as are the witnesses for a given text version</li>
           <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-profileDesc.html">profileDesc</a> from the header module to record the most important metadata:
             <a class="tei-gi tei-gi3" href="ref-abstract.html">abstract</a>, <a class="tei-gi tei-gi3" href="ref-textClass.html">textClass</a> and <a class="tei-gi tei-gi3" href="ref-langUsage.html">langUsage</a></li>
-        </ul></article>
+        </ul><p class="tei-p tei-p2">NB: <span class="tei-code tei-code1">bibl/@xml:id</span> identifier is used as a witness siglum (reference) for any apparatus entries relevant to that witness</p><pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-bibl-egXML"><code data-language="xml"><span class="highlight"><span class="nt">&lt;sourceDesc&gt;</span>
+  <span class="nt">&lt;bibl</span> <span class="na">xml:id=</span><span class="s">"PF1395"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Psałterz floriański<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;date</span> <span class="na">when=</span><span class="s">"1395"</span><span class="nt">&gt;</span>ca 1395-ca 1405<span class="nt">&lt;/date&gt;</span>
+    <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"https://polona.pl/preview/43713d40-72bd-439c-b7ce-300541ade137"</span><span class="nt">&gt;</span>Biblioteka Narodowa <span class="nt">&lt;idno</span> <span class="na">type=</span><span class="s">"BN"</span><span class="nt">&gt;</span>Rps 8002 III<span class="nt">&lt;/idno&gt;&lt;/ref&gt;</span>
+  <span class="nt">&lt;/bibl&gt;</span>
+<span class="nt">&lt;/sourceDesc&gt;</span>
+</span></code></pre></article>
       <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="editorial-commentary-standoff.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>Editorial commentary (standOff)</span></a><a class="chapter-nav__next" href="REF-ELEMENTS.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">Appendix A</span>Elements</span></a></nav>
     </main>
     <aside class="doc-aside" aria-label="On this page" data-page-toc>

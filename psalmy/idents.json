@@ -345,9 +345,24 @@
     "href": "ref-epigraph.html"
   },
   {
+    "ident": "ex",
+    "kind": "element",
+    "href": "ref-ex.html"
+  },
+  {
+    "ident": "expan",
+    "kind": "element",
+    "href": "ref-expan.html"
+  },
+  {
     "ident": "fileDesc",
     "kind": "element",
     "href": "ref-fileDesc.html"
+  },
+  {
+    "ident": "fw",
+    "kind": "element",
+    "href": "ref-fw.html"
   },
   {
     "ident": "gap",
@@ -698,6 +713,11 @@
     "ident": "seg",
     "kind": "element",
     "href": "ref-seg.html"
+  },
+  {
+    "ident": "sic",
+    "kind": "element",
+    "href": "ref-sic.html"
   },
   {
     "ident": "sourceDesc",
