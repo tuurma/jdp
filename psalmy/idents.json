@@ -55,11 +55,6 @@
     "href": "ref-att.canonical.html"
   },
   {
-    "ident": "att.cmc",
-    "kind": "class",
-    "href": "ref-att.cmc.html"
-  },
-  {
     "ident": "att.cReferencing",
     "kind": "class",
     "href": "ref-att.cReferencing.html"
@@ -83,11 +78,6 @@
     "ident": "att.datable.w3c",
     "kind": "class",
     "href": "ref-att.datable.w3c.html"
-  },
-  {
-    "ident": "att.datcat",
-    "kind": "class",
-    "href": "ref-att.datcat.html"
   },
   {
     "ident": "att.declarable",
@@ -213,6 +203,11 @@
     "ident": "att.notated",
     "kind": "class",
     "href": "ref-att.notated.html"
+  },
+  {
+    "ident": "att.personal",
+    "kind": "class",
+    "href": "ref-att.personal.html"
   },
   {
     "ident": "att.placement",
@@ -550,6 +545,11 @@
     "href": "ref-model.nameLike.html"
   },
   {
+    "ident": "model.nameLike.agent",
+    "kind": "class",
+    "href": "ref-model.nameLike.agent.html"
+  },
+  {
     "ident": "model.noteLike",
     "kind": "class",
     "href": "ref-model.noteLike.html"
@@ -638,6 +638,11 @@
     "ident": "model.teiHeaderPart",
     "kind": "class",
     "href": "ref-model.teiHeaderPart.html"
+  },
+  {
+    "ident": "name",
+    "kind": "element",
+    "href": "ref-name.html"
   },
   {
     "ident": "note",

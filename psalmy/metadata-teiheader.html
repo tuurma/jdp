@@ -58,14 +58,79 @@
             as many nested <a class="tei-gi tei-gi3" href="ref-bibl.html">bibl</a> elements as are the witnesses for a given text version</li>
           <li class="tei-item tei-item27"><a class="tei-gi tei-gi3" href="ref-profileDesc.html">profileDesc</a> from the header module to record the most important metadata:
             <a class="tei-gi tei-gi3" href="ref-abstract.html">abstract</a>, <a class="tei-gi tei-gi3" href="ref-textClass.html">textClass</a> and <a class="tei-gi tei-gi3" href="ref-langUsage.html">langUsage</a></li>
-        </ul><p class="tei-p tei-p2">NB: <span class="tei-code tei-code1">bibl/@xml:id</span> identifier is used as a witness siglum (reference) for any apparatus entries relevant to that witness</p><pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-bibl-egXML"><code data-language="xml"><span class="highlight"><span class="nt">&lt;sourceDesc&gt;</span>
+        </ul><div class="tei-div tei-div27" id="metadata-teiheader-title-and-contributors-titlestmt">
+          <h2 class="tei-head"><span class="heading-number">9.1 </span>Title and contributors (titleStmt)</h2>
+          
+          <p class="tei-p tei-p2">In the <a class="tei-gi tei-gi3" href="ref-fileDesc.html">fileDesc</a> section of the TEI Header, the <a class="tei-gi tei-gi3" href="ref-titleStmt.html">titleStmt</a>
+            element is used to store the title of the document,
+            and responsibility statement for the contributors working on the 
+            text in question.</p>
+          
+          <p class="tei-p tei-p2"><a class="tei-gi tei-gi3" href="ref-titleStmt.html">titleStmt</a> MUST provide the publication <a class="tei-gi tei-gi3" href="ref-title.html">title</a> of the edited
+            text, and one or more <a class="tei-gi tei-gi3" href="ref-respStmt.html">respStmt</a> entries listing all contributors involved
+            in a certain role.</p>
+          
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-fileDesc-bibl"><code data-language="xml"><span class="highlight"><span class="nt">&lt;fileDesc&gt;</span>
+  <span class="nt">&lt;titleStmt&gt;&lt;title&gt;</span>Psałterz floriański<span class="nt">&lt;/title&gt;&lt;respStmt&gt;&lt;resp&gt;</span>tłumaczenie<span class="nt">&lt;/resp&gt;&lt;name&gt;</span>Anonim<span class="nt">&lt;/name&gt;&lt;/respStmt&gt;</span>
+...
+<span class="nt">&lt;/titleStmt&gt;</span>
+  <span class="nt">&lt;publicationStmt&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Jagiellońska Platforma Cyfrowa<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/publicationStmt&gt;</span>
+  <span class="nt">&lt;sourceDesc&gt;</span>
+    <span class="nt">&lt;bibl</span> <span class="na">xml:id=</span><span class="s">"PF1395"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;title&gt;</span>Psałterz floriański<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;date</span> <span class="na">when=</span><span class="s">"1395"</span><span class="nt">&gt;</span>ca 1395-ca 1405<span class="nt">&lt;/date&gt;</span>
+      <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"https://polona.pl/preview/43713d40-72bd-439c-b7ce-300541ade137"</span><span class="nt">&gt;</span>Biblioteka Narodowa <span class="nt">&lt;idno</span> <span class="na">type=</span><span class="s">"BN"</span><span class="nt">&gt;</span>Rps 8002 III<span class="nt">&lt;/idno&gt;&lt;/ref&gt;</span>
+    <span class="nt">&lt;/bibl&gt;</span>
+  <span class="nt">&lt;/sourceDesc&gt;</span>
+<span class="nt">&lt;/fileDesc&gt;</span>
+</span></code></pre>      
+        </div><div class="tei-div tei-div27" id="metadata-teiheader-responsibility-statements">
+            <h2 class="tei-head"><span class="heading-number">9.2 </span>Responsibility statements</h2>
+            
+            <p class="tei-p tei-p2">Each of the individuals involved at any stage of the preparation of the edited text
+              has a right to be duly acknowledged with their contribution. To this end, for each
+              role or type of contribution, irregardles if directly reflected in the source control
+              repository, a list of <a class="tei-gi tei-gi3" href="ref-name.html">name</a> elements with all individuals involved must be provided.</p>
+            
+            <p class="tei-p tei-p2">It is typical that certain individuals will appear in multiple <a class="tei-gi tei-gi3" href="ref-respStmt.html">respStmt</a>,
+              and equally typical that certain statements will comprise a long list of individuals.</p>
+            
+            <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-respStmt-bibl"><code data-language="xml"><span class="highlight"><span class="nt">&lt;respStmt&gt;</span>
+  <span class="nt">&lt;resp&gt;</span>transliteracja<span class="nt">&lt;/resp&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Joanna Hałaczkiewicz<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span>
+<span class="nt">&lt;respStmt&gt;</span>
+  <span class="nt">&lt;resp&gt;</span>transkrypcja<span class="nt">&lt;/resp&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Magdalena Komorowska<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span>
+<span class="nt">&lt;respStmt&gt;</span>
+  <span class="nt">&lt;resp&gt;</span>komentarz rzeczowy<span class="nt">&lt;/resp&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Magdalena Komorowska<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span>
+<span class="nt">&lt;respStmt&gt;</span>
+  <span class="nt">&lt;resp&gt;</span>znakowanie TEI<span class="nt">&lt;/resp&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Joanna Hałaczkiewicz<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Magdalena Komorowska<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Magdalena Turska<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/respStmt&gt;</span>
+</span></code></pre>      
+          </div><div class="tei-div tei-div27" id="metadata-teiheader-description-of-sources-and-witnesses"><h2 class="tei-head"><span class="heading-number">9.3 </span>Description of sources and witnesses</h2>
+            <p class="tei-p tei-p2">Each of the witnesses used in preparation of the edition MUST be described with <a class="tei-gi tei-gi3" href="ref-bibl.html">bibl</a> in the <a class="tei-gi tei-gi3" href="ref-sourceDesc.html">sourceDesc</a> section.</p>
+            
+            <p class="tei-p tei-p2">NB: <span class="tei-code tei-code1">bibl/@xml:id</span> identifier is used as a witness siglum (reference) for any apparatus entries attested by that witness.</p>
+            
+            <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="gi-bibl-egXML"><code data-language="xml"><span class="highlight"><span class="nt">&lt;sourceDesc&gt;</span>
   <span class="nt">&lt;bibl</span> <span class="na">xml:id=</span><span class="s">"PF1395"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Psałterz floriański<span class="nt">&lt;/title&gt;</span>
     <span class="nt">&lt;date</span> <span class="na">when=</span><span class="s">"1395"</span><span class="nt">&gt;</span>ca 1395-ca 1405<span class="nt">&lt;/date&gt;</span>
     <span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">"https://polona.pl/preview/43713d40-72bd-439c-b7ce-300541ade137"</span><span class="nt">&gt;</span>Biblioteka Narodowa <span class="nt">&lt;idno</span> <span class="na">type=</span><span class="s">"BN"</span><span class="nt">&gt;</span>Rps 8002 III<span class="nt">&lt;/idno&gt;&lt;/ref&gt;</span>
   <span class="nt">&lt;/bibl&gt;</span>
 <span class="nt">&lt;/sourceDesc&gt;</span>
-</span></code></pre></article>
+</span></code></pre>
+            
+          </div></article>
       <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="editorial-commentary-standoff.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>Editorial commentary (standOff)</span></a><a class="chapter-nav__next" href="REF-ELEMENTS.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">Appendix A</span>Elements</span></a></nav>
     </main>
     <aside class="doc-aside" aria-label="On this page" data-page-toc>
