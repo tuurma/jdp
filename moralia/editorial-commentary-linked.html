@@ -52,13 +52,47 @@
     
     <main class="doc-main" id="doc-content">
       <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 7 </span>Editorial commentary (linked)</h1><p class="tei-p tei-p2">Editorial commentary is always linked to the place it refers to, using <a class="tei-gi tei-gi3" href="ref-anchor.html">anchor</a> elements as 
-          wrappers, and <span class="tei-att tei-att1">@corresp</span> as the reference.</p></article>
-      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="facsimiles-and-pages.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Facsimiles and pages</span></a><a class="chapter-nav__next" href="general-organization-of-the-metadata-teiheader.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>General organization of the metadata (teiHeader)</span></a></nav>
+          wrappers, and <span class="tei-att tei-att1">@corresp</span> as the reference key.</p><p class="tei-p tei-p2">Anchors should be always placed within a verse line <a class="tei-gi tei-gi3" href="ref-l.html">l</a> or marginalia 
+          <a class="tei-gi tei-gi3" href="ref-note.html">note</a> they refer to, they MUST NOT be hanging outside of these structural elements.</p><div class="tei-div tei-div27" id="editorial-commentary-linked-bibliographical-references-in-the-commentary">
+          <h2 class="tei-head"><span class="heading-number">7.1 </span>Bibliographical references in the commentary</h2>
+          <p class="tei-p tei-p2">Editorial commentary in the <span class="tei-hi tei-hi1">Moralia</span> edition explores transmission of ideas, in particular between
+            Erasmus of Rotterdam's <span class="tei-hi tei-hi1">Adagia</span> and Potocki's <span class="tei-hi tei-hi1">Moralia</span>, but often tracking earlier influences, 
+            back to Antiquity. What follows, editorial commentary frequently mentions authors and work titles, and, where possible,
+          includes bibliographical references or links to online resources.</p>
+          
+          <p class="tei-p tei-p2">While the question is still open as to what extent these relationships will be encoded, the first draft proposes
+            to proceed as follows:</p>
+          
+          <p class="tei-p tei-p2">Where specific reference is made, the <a class="tei-gi tei-gi3" href="ref-bibl.html">bibl</a> element is to be used, either linked directly to an external resource
+            or internally, to a bibliographical entry in <span class="tei-code tei-code1">registers/bibliography.xml</span>. If the former, the <span class="tei-att tei-att1">@corresp</span> attribute
+            MUST use an absolute URI link, in the latter case a cross-reference using the local identifier, e.g. <span class="tei-code tei-code1">&lt;bibl corresp="#Hor-Carm"&gt;</span>
+            should be made. In both cases, micro-structure of the reference string should be marked up with <a class="tei-gi tei-gi3" href="ref-title.html">title</a> and <a class="tei-gi tei-gi3" href="ref-author.html">author</a> elements.</p>
+       
+       <p class="tei-p tei-p2">The example below illustrates the two approaches for the same Plutarch reference:</p>
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-bibl-author"><code data-language="xml"><span class="highlight"><span class="nt">&lt;bibl</span> <span class="na">corresp=</span><span class="s">"https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0007.tlg112.perseus-grc1:716a"</span><span class="nt">&gt;&lt;author&gt;</span>Plut.<span class="nt">&lt;/author&gt;&lt;title&gt;</span>Quaes. Conv.<span class="nt">&lt;/title&gt;</span> 716a<span class="nt">&lt;/bibl&gt;</span>
+<span class="nt">&lt;bibl</span> <span class="na">corresp=</span><span class="s">"#Plut-QuaesConv"</span><span class="nt">&gt;&lt;author&gt;</span>Plut.<span class="nt">&lt;/author&gt;&lt;title&gt;</span>Quaes. Conv.<span class="nt">&lt;/title&gt;</span> 716a<span class="nt">&lt;/bibl&gt;</span>
+</span></code></pre>
+          
+          <p class="tei-p tei-p2">Where a more general remark about potential relation to other author's work is made, without pinpointing the exact passage,
+            an author's name can be marked up with <a class="tei-gi tei-gi3" href="ref-persName.html">persName</a> with <span class="tei-att tei-att1">@role</span> set to <span class="tei-code tei-code1">author</span>.</p>
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-persName-author"><code data-language="xml"><span class="highlight">Prawdopodobnie nawiązanie do cytowanego przez
+<span class="nt">&lt;persName</span> <span class="na">type=</span><span class="s">"author"</span> <span class="na">key=</span><span class="s">"gnd-118530666"</span><span class="nt">&gt;</span>Erazma<span class="nt">&lt;/persName&gt;</span>
+ wyrażenia 
+<span class="nt">&lt;persName</span> <span class="na">type=</span><span class="s">"author"</span> <span class="na">key=</span><span class="s">"gnd-118553569"</span><span class="nt">&gt;</span>Horacego<span class="nt">&lt;/persName&gt;</span>
+: 
+<span class="nt">&lt;foreign</span> <span class="na">xml:lang=</span><span class="s">"lat"</span><span class="nt">&gt;</span>fortunaque dulci ebria<span class="nt">&lt;/foreign&gt;</span>
+</span></code></pre>
+        </div><div class="tei-div tei-div27" id="editorial-commentary-linked-quotes-paraphrases-and-translations">
+          <h2 class="tei-head"><span class="heading-number">7.2 </span>Quotes, paraphrases and translations</h2>
+          <p class="tei-p tei-p2">In commentary, passages quoted, their translated or paraphrased versions may be wrapped in <a class="tei-gi tei-gi3" href="ref-q.html">q</a> or <a class="tei-gi tei-gi3" href="ref-foreign.html">foreign</a>
+            with <span class="tei-att tei-att1">@xml:lang</span> if given in original language, distinct from the surrounding commentary text.</p>
+        </div></article>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="lexical-glosses.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Lexical glosses</span></a><a class="chapter-nav__next" href="general-organization-of-the-metadata-teiheader.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>General organization of the metadata (teiHeader)</span></a></nav>
     </main>
     <aside class="doc-aside" aria-label="On this page" data-page-toc>
       <p class="doc-aside__label">On this page</p>
       <ul></ul>
-      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="facsimiles-and-pages.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Facsimiles and pages</span></a><a class="chapter-nav__next" href="general-organization-of-the-metadata-teiheader.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>General organization of the metadata (teiHeader)</span></a></nav>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="lexical-glosses.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">6</span>Lexical glosses</span></a><a class="chapter-nav__next" href="general-organization-of-the-metadata-teiheader.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">8</span>General organization of the metadata (teiHeader)</span></a></nav>
     </aside>
   </div>
   <footer class="doc-footer">

@@ -57,8 +57,8 @@
 </span></code></pre>
   </section><section class="spec-section" id="ref-constraints"><h2>Schematron</h2><pre class="tei-constraintSpec tei-constraintSpec2 code"><code>&lt;constraintSpec xmlns:sch="http://purl.oclc.org/dsdl/schematron" ident="key-person" mode="add" scheme="schematron"&gt;
             &lt;constraint&gt;
-              &lt;sch:rule context="tei:persName"&gt;
-                &lt;sch:assert test="@key  = collection('../../data/registers')//tei:person/@xml:id"&gt;Missing @key or wrong ID&lt;/sch:assert&gt;
+              &lt;sch:rule context="tei:persName[@key]"&gt;
+                &lt;sch:assert test="@key  = collection('../../data/registers')//tei:person/@xml:id"&gt;Incorrect @key&lt;/sch:assert&gt;
               &lt;/sch:rule&gt;
             &lt;/constraint&gt;
           &lt;/constraintSpec&gt;</code></pre></section><section class="spec-section" id="ref-schema"><h2>Content model</h2><pre class="tei-content tei-content2 code"><code>&lt;content&gt;

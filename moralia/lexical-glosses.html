@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>data-organization — Moralia: TEI Customization</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
+  <title>lexical-glosses — Moralia: TEI Customization</title><link rel="icon" href="tei-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="document.css">
   <link rel="stylesheet" href="css/tagdocs.css">
   <script src="theme.js"></script>
@@ -51,32 +51,17 @@
     </aside>
     
     <main class="doc-main" id="doc-content">
-      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 1 </span>Data organization</h1><p class="tei-p tei-p2">All data required to publish the literary edition based on the <span class="tei-hi tei-hi1">UJ Blueprint</span> MUST be stored in source control repository, 
-          organized as a standard TEI Publisher data package.
-          All TEI files are stored under the <span class="tei-code tei-code1">data</span> subcollection. Internal organization is as follows:
-        </p><ul class="tei-list tei-list20">
-          <li class="tei-item tei-item27">
-            <span class="tei-code tei-code1">edition</span> contains TEI XML files, further organized into two parallel subcollections, <span class="tei-code tei-code1">transliteration</span> 
-            and <span class="tei-code tei-code1">transcription</span>;
-            within the collection, there's one TEI file for each individual poem, e.g. <span class="tei-hi tei-hi1">Citra Vinum Temulentia, Book 1, Morale 1</span> in <span class="tei-code tei-code1">transcription/I_1.xml</span>
-          </li>
-          <li class="tei-item tei-item27">
-            <span class="tei-code tei-code1">landing</span> contains TEI XML files, in particular <span class="tei-code tei-code1">landing.xml</span> which contains 
-            texts and information used to present the starting page of the project
-          </li>
-          <li class="tei-item tei-item27">
-            <span class="tei-code tei-code1">registers</span> contains TEI XML files for all registers and authority files used in the project
-          </li>
-          <li class="tei-item tei-item27">
-            <span class="tei-code tei-code1">articles</span> contains TEI XML files with auxiliary material for the edition: editorial introduction, etc
-          </li>
-        </ul></article>
-      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num"></span></span></a><a class="chapter-nav__next" href="identifiers.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">2</span>Identifiers and referencing mechanisms</span></a></nav>
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 6 </span>Lexical glosses</h1><p class="tei-p tei-p2">Archaic words and phrases requiring elucidation can be explicitly marked up and linked to the glossary entry.
+        The <a class="tei-gi tei-gi3" href="ref-term.html">term</a> element with <span class="tei-att tei-att1">@corresp</span> is used for this purpose.</p><p class="tei-p tei-p2">Only the transcription is subject to this encoding, similarly to other critical annotations.</p><pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-term"><code data-language="xml"><span class="highlight"><span class="nt">&lt;l&gt;</span>
+Często skutek nadzieją<span class="nt">&lt;term</span> <span class="na">corresp=</span><span class="s">"#mor-gl-0025"</span><span class="nt">&gt;</span>skołozrywą<span class="nt">&lt;/term&gt;</span> spłoszy.
+<span class="nt">&lt;/l&gt;</span>
+</span></code></pre></article>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="facsimiles-and-pages.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles and pages</span></a><a class="chapter-nav__next" href="editorial-commentary-linked.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">7</span>Editorial commentary (linked)</span></a></nav>
     </main>
     <aside class="doc-aside" aria-label="On this page" data-page-toc>
       <p class="doc-aside__label">On this page</p>
       <ul></ul>
-      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num"></span></span></a><a class="chapter-nav__next" href="identifiers.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">2</span>Identifiers and referencing mechanisms</span></a></nav>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="facsimiles-and-pages.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles and pages</span></a><a class="chapter-nav__next" href="editorial-commentary-linked.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">7</span>Editorial commentary (linked)</span></a></nav>
     </aside>
   </div>
   <footer class="doc-footer">

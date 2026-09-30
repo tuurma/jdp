@@ -51,21 +51,20 @@
     </aside>
     
     <main class="doc-main" id="doc-content">
-      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 4 </span>Formal structure of the morale</h1><p class="tei-p tei-p2">Every morale is represented as a single <a class="tei-gi tei-gi3" href="ref-div.html">div</a> element. It
+      <article class="doc-chapter"><h1 class="tei-head"><span class="heading-number">Chapter 4 </span>Formal structure of the poem</h1><p class="tei-p tei-p2">Every <span class="tei-hi tei-hi1">morale</span> is represented as a single <a class="tei-gi tei-gi3" href="ref-div.html">div</a> element. It
           comprises of an obligatory <a class="tei-gi tei-gi3" href="ref-head.html">head</a> element, followed by one or more of
             <a class="tei-gi tei-gi3" href="ref-lg.html">lg</a> (strophes). Structural, top level elements (direct children) of the division may
           also include marginal notes.</p><p class="tei-p tei-p2">Selected elements of the physical structure of the document, namely page beginnings may also occur.</p><p class="tei-p tei-p2">The example below shows a simplified example, illustrating the top-level components of a division.</p><pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-div-p1"><code data-language="xml"><span class="highlight"><span class="nt">&lt;div</span> <span class="na">xml:id=</span><span class="s">"I.1"</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">synch=</span><span class="s">"#I.1"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;pb</span> <span class="na">facs=</span><span class="s">"#f_8r"</span> <span class="na">polona=</span><span class="s">"096aba0b-89de-492c-98c7-6e3c047620b4"</span> <span class="na">xml:id=</span><span class="s">"pb.I.1.1"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;pb</span> <span class="na">facs=</span><span class="s">"#f_8r"</span> <span class="na">xml:id=</span><span class="s">"pb.I.1.1"</span> <span class="na">synch=</span><span class="s">"#pb.I.1.1"</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;head</span> <span class="na">xml:id=</span><span class="s">"I.1.title"</span> <span class="na">synch=</span><span class="s">"#I.1.title"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-2"</span><span class="nt">&gt;</span>
-Citra vinum temulentia
-<span class="nt">&lt;anchor</span> <span class="na">corresp=</span><span class="s">"#I.1.c.1"</span><span class="nt">/&gt;&lt;/head&gt;</span>
-  <span class="nt">&lt;note</span> <span class="na">place=</span><span class="s">"margin"</span><span class="nt">&gt;</span>Pijaństwo bez wina<span class="nt">&lt;/note&gt;</span>
+Citra vinum temulentia<span class="nt">&lt;anchor</span> <span class="na">corresp=</span><span class="s">"#I.1.c.1"</span><span class="nt">/&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;note</span> <span class="na">place=</span><span class="s">"margin"</span> <span class="na">type=</span><span class="s">"argument"</span><span class="nt">&gt;</span>Pijaństwo bez wina<span class="nt">&lt;/note&gt;</span>
   <span class="nt">&lt;lg&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.1"</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">synch=</span><span class="s">"#I.1.1"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-3"</span><span class="nt">&gt;</span>Niechaj się nikt nie myli, żeby tylko winem<span class="nt">&lt;/l&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.2"</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">synch=</span><span class="s">"#I.1.2"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-4"</span><span class="nt">&gt;</span>Abo więc trunkiem ludzie upijali inem;<span class="nt">&lt;/l&gt;</span>
 ...
 <span class="nt">&lt;/lg&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-</span></code></pre><div class="tei-div tei-div27" id="division-identification-and-classification">
-          <h2 class="tei-head"><span class="heading-number">4.1 </span>Identification and classification</h2>
+</span></code></pre><div class="tei-div tei-div27" id="division-poem-identification-classification-and-alignment">
+          <h2 class="tei-head"><span class="heading-number">4.1 </span>Poem identification, classification and alignment</h2>
           <p class="tei-p tei-p2">The <a class="tei-gi tei-gi3" href="ref-div.html">div</a> element MUST carry the following attributes:</p>
 
           <ul class="tei-list tei-list20">
@@ -73,23 +72,50 @@ Citra vinum temulentia
             <li class="tei-item tei-item27"><span class="tei-att tei-att1">@synch</span>: synchronization key, same as the identifier of morale transcription</li>
             <li class="tei-item tei-item27"><span class="tei-att tei-att1">@n</span>: ordinal (a number)</li>
           </ul>
-        </div><div class="tei-div tei-div27" id="division-morale-title-head">
-          <h2 class="tei-head"><span class="heading-number">4.2 </span>Morale title (head)</h2>
+          
+          <p class="tei-p tei-p2">The <span class="tei-att tei-att1">@synch</span> attribute is used to identify aligned structures across the text versions. Principally,
+            this mechanism is used to align transcription and transliteration, but it may be extended to various
+            translations and other text versions.</p>
+        </div><div class="tei-div tei-div27" id="division-poem-title-head">
+          <h2 class="tei-head"><span class="heading-number">4.2 </span>Poem title (head)</h2>
 
-          <p class="tei-p tei-p2">Each morale MUST have a <a class="tei-gi tei-gi3" href="ref-head.html">head</a> providing its title.
+          <p class="tei-p tei-p2">Each <span class="tei-hi tei-hi1">morale</span> MUST have a <a class="tei-gi tei-gi3" href="ref-head.html">head</a> providing its title.
             Where such a heading doesn't appear in the source text, it MUST be supplied and explicitly marked
             up with <a class="tei-gi tei-gi3" href="ref-supplied.html">supplied</a> element.</p>
           
-          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-head-supplied-p1"><code data-language="xml"><span class="highlight"><span class="nt">&lt;head&gt;</span>Citra vinum temulentia<span class="nt">&lt;/head&gt;</span>
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-head-supplied"><code data-language="xml"><span class="highlight"><span class="nt">&lt;head&gt;</span>Citra vinum temulentia<span class="nt">&lt;/head&gt;</span>
 </span></code></pre>
           
+        </div><div class="tei-div tei-div27" id="division-line-groups-and-verse-lines">
+          <h2 class="tei-head"><span class="heading-number">4.3 </span>Line groups and verse lines</h2>
+          
+          <p class="tei-p tei-p2">All verse lines <a class="tei-gi tei-gi3" href="ref-l.html">l</a> MUST be grouped into strophes (<a class="tei-gi tei-gi3" href="ref-lg.html">lg</a>).</p>
+          <p class="tei-p tei-p2">Each verse line MUST have <span class="tei-att tei-att1">@xml:id</span>, <span class="tei-att tei-att1">@synch</span> and <span class="tei-att tei-att1">@n</span> attributes,
+            lines in transcription MUST additionally have the <span class="tei-att tei-att1">@facs</span> attribute.</p>
+          
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-lg"><code data-language="xml"><span class="highlight"><span class="nt">&lt;lg&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.1"</span> <span class="na">n=</span><span class="s">"1"</span> <span class="na">synch=</span><span class="s">"#I.1.1"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-3"</span><span class="nt">&gt;</span>Niechaj się nikt nie myli, żeby tylko winem<span class="nt">&lt;/l&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.2"</span> <span class="na">n=</span><span class="s">"2"</span> <span class="na">synch=</span><span class="s">"#I.1.2"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-4"</span><span class="nt">&gt;</span>Abo więc trunkiem ludzie upijali inem;<span class="nt">&lt;/l&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.3"</span> <span class="na">n=</span><span class="s">"3"</span> <span class="na">synch=</span><span class="s">"#I.1.3"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-5"</span><span class="nt">&gt;</span>Żadnym masłokiem, który dla szaleństwa piją,<span class="nt">&lt;/l&gt;&lt;l</span> <span class="na">xml:id=</span><span class="s">"I.1.4"</span> <span class="na">n=</span><span class="s">"4"</span> <span class="na">synch=</span><span class="s">"#I.1.4"</span> <span class="na">facs=</span><span class="s">"#f_8r.zone-6"</span><span class="nt">&gt;</span>Ani tak drwią gorzałką jako opiniją.<span class="nt">&lt;/l&gt;</span>
+...
+<span class="nt">&lt;/lg&gt;</span>
+</span></code></pre>
+          
+        </div><div class="tei-div tei-div27" id="division-marginalia-note">
+          <h2 class="tei-head"><span class="heading-number">4.4 </span>Marginalia (note)</h2>
+          <p class="tei-p tei-p2">Marginalia, representing secondary headings (<span class="tei-hi tei-hi1">arguments</span>) or references to other works, are encoded with <a class="tei-gi tei-gi3" href="ref-note.html">note</a>
+            with <span class="tei-att tei-att1">@place</span> set to <span class="tei-code tei-code1">margin</span>. Attribute <span class="tei-att tei-att1">@type</span> should be set to
+            <span class="tei-code tei-code1">ref</span> for intertextual references, and <span class="tei-code tei-code1">argument</span> for secondary headings. All other marginalia types
+            should bear the <span class="tei-code tei-code1">other</span> value for this attribute.</p>
+          
+          <pre class="tei-eg_egXML tei-eg_egXML2 egXML code" id="ex-note-margin"><code data-language="xml"><span class="highlight"><span class="nt">&lt;note</span> <span class="na">place=</span><span class="s">"margin"</span> <span class="na">type=</span><span class="s">"argument"</span><span class="nt">&gt;</span>Pijaństwo bez wina<span class="nt">&lt;/note&gt;</span>
+</span></code></pre>
+          
+          <p class="tei-p tei-p2"><a class="tei-gi tei-gi3" href="ref-note.html">note</a> may also be used to encode editorial commentary, see the corresponding chapter</p>
         </div></article>
-      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="structure.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>General structure of the edition</span></a><a class="chapter-nav__next" href="marginalia-note.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Marginalia (note)</span></a></nav>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a class="chapter-nav__prev" href="structure.html" rel="prev"><span class="chapter-nav__label">Previous chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>General structure of the edition</span></a><a class="chapter-nav__next" href="facsimiles-and-pages.html" rel="next"><span class="chapter-nav__label">Next chapter</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles and pages</span></a></nav>
     </main>
     <aside class="doc-aside" aria-label="On this page" data-page-toc>
       <p class="doc-aside__label">On this page</p>
       <ul></ul>
-      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="structure.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>General structure of the edition</span></a><a class="chapter-nav__next" href="marginalia-note.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Marginalia (note)</span></a></nav>
+      <nav class="chapter-nav chapter-nav--rail" aria-label="Chapter"><a class="chapter-nav__prev" href="structure.html" rel="prev"><span class="chapter-nav__label">Previous</span><span class="chapter-nav__title"><span class="chapter-nav__num">3</span>General structure of the edition</span></a><a class="chapter-nav__next" href="facsimiles-and-pages.html" rel="next"><span class="chapter-nav__label">Next</span><span class="chapter-nav__title"><span class="chapter-nav__num">5</span>Facsimiles and pages</span></a></nav>
     </aside>
   </div>
   <footer class="doc-footer">

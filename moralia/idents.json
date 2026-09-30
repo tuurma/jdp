@@ -295,11 +295,6 @@
     "href": "ref-choice.html"
   },
   {
-    "ident": "cit",
-    "kind": "element",
-    "href": "ref-cit.html"
-  },
-  {
     "ident": "corr",
     "kind": "element",
     "href": "ref-corr.html"
